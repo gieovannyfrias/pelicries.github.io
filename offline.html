@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+   <link rel="icon" href="https://pelicries.gieovannyfrias.com/Imagenes/Logo.webp" type="image/x-icon">
+<!--  google-->
+    <title>Pelicries - Sin Acceso</title>
+  <!--  canonical web-->
+  <link rel="canonical" href="https://pelicries.gieovannyfrias.com"/>
+
+<!-- Título que verá Google -->
+<meta name="title" content="Pelicries - Sin Acceso">
+<meta name="description" content="En pelicries no hay acceso a la plataforma.">
+<meta name="robots" content="index, follow">
+<meta name="keywords" content="peliculas, series, entretenimiento, plataformas digitales"/>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pelicries - Sin Acceso">
+  <meta property="og:description" content="En pelicries no hay acceso a la plataforma.">
+  <meta property="og:image" content="https://pelicries.gieovannyfrias.com/Imagenes/Logo.webp">
+  <meta property="og:url" content="https://pelicries.gieovannyfrias.com/offline">
+  <meta property="og:type" content="article">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pelicries - Sin Acceso">
+  <meta name="twitter:description" content="En pelicries no hay acceso a la plataforma.">
+<meta name="twitter:image" content="https://pelicries.gieovannyfrias.com/Imagenes/Logo.webp">
+  
+</head>
+<body>
+
+    <div class="premium-bg"></div>
+    <div class="cinema-grain"></div>
+
+    <div class="ticket-booth">
+        <div class="vip-badge">Pelicries Premium</div>
+        
+        <h1>Función <span>Interrumpida</span></h1>
+        
+        <p>
+            Tu pase pelicries no puede validar la sala de peliculas y series en este momento. La conexión con nuestros servidores premium de alta definición se ha quebrado... pero los susurros en los asientos vacíos de atrás continúan.
+        </p>
+
+        <a href="/" class="btn-premium-retry">Validar Boleto</a>
+    </div>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #030204;
+            color: #e2e8f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Degradado de fondo Premium de cine de terror */
+        .premium-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(139, 0, 0, 0.15) 0%, rgba(5, 5, 5, 1) 80%);
+            z-index: 1;
+        }
+
+        /* Taquilla digital corrupta */
+        .ticket-booth {
+            background: rgba(10, 10, 12, 0.95);
+            border: 1px solid #d4af37; /* Borde dorado Premium */
+            box-shadow: 0 0 35px rgba(212, 175, 55, 0.1), inset 0 0 20px rgba(139, 0, 0, 0.3);
+            border-radius: 12px;
+            padding: 45px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Sello VIP Dorado Quebrado */
+        .vip-badge {
+            font-size: 0.85rem;
+            color: #d4af37;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-weight: bold;
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 20px;
+            margin-bottom: 25px;
+            background: rgba(212, 175, 55, 0.05);
+            animation: pulse-gold 2.5s infinite ease-in-out;
+        }
+
+        h1 {
+            font-family: 'Georgia', serif;
+            font-size: 2.2rem;
+            color: #ffffff;
+            margin-bottom: 15px;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+
+        h1 span {
+            color: #b91c1c; /* Rojo oscuro */
+            font-weight: bold;
+        }
+
+        p {
+            color: #94a3b8;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 35px;
+        }
+
+        /* Botón de acceso exclusivo */
+        .btn-premium-retry {
+            display: inline-block;
+            background: linear-gradient(135deg, #b91c1c 0%, #7f1d1d 100%);
+            color: #ffffff;
+            border: 1px solid #d4af37;
+            padding: 14px 32px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(185, 28, 28, 0.4);
+        }
+
+        .btn-premium-retry:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3);
+            background: linear-gradient(135deg, #d4af37 0%, #aa8416 100%);
+            color: #000000;
+        }
+
+        /* Líneas de interferencia elegantes */
+        .cinema-grain {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 0);
+            background-size: 4px 4px;
+            pointer-events: none;
+            z-index: 3;
+            opacity: 0.7;
+        }
+
+        /* Animaciones */
+        @keyframes pulse-gold {
+            0%, 100% { border-color: rgba(212, 175, 55, 0.4); box-shadow: 0 0 5px rgba(212, 175, 55, 0); }
+            50% { border-color: rgba(212, 175, 55, 1); box-shadow: 0 0 15px rgba(212, 175, 55, 0.2); }
+        }
+    </style>
+</body>
+</html>
