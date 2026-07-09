@@ -248,7 +248,7 @@ document.addEventListener("DOMContentLoaded", () => {
   headerContainer.className = "custom-header";
   headerContainer.innerHTML = `
     <div class="header-logo">
-      <a href="#">Pelicies</a>
+      <a href="#">Pelicries</a>
     </div>
     <button class="menu-toggle" aria-label="Abrir menú">
       <span></span>
@@ -273,7 +273,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <li><a href="/Politicas_privacidad">Política de privacidad</a></li>
         <li><a href="/Politicas_cookies">Políticas de cookies</a></li>
       </ul>
-      <p>&copy; ${new Date().getFullYear()} Pelicies. Todos los derechos reservados.</p>
+      <p>&copy; ${new Date().getFullYear()} Pelicries. Todos los derechos reservados.</p>
     </div>
   `;
   document.body.appendChild(footerContainer);
