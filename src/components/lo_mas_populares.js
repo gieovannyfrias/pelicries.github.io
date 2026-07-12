@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
   `;
 
-  main.insertBefore(trendingSection, hijos[5]);
+  main.insertBefore(trendingSection, hijos[8]);
   
   // Estilos dinámicos
   const style = document.createElement("style");
