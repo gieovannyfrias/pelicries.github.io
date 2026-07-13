@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+   <link rel="icon" href="https://pelicries.gieovannyfrias.com/Imagenes/Logo.webp" type="image/x-icon">
+<!--  google-->
+    <title>Terminos de uso | Peliculas y series</title>
+  <!--  canonical web-->
+  <link rel="canonical" href="https://pelicries.gieovannyfrias.com"/>
+
+<!-- Título que verá Google -->
+<meta name="title" content="Terminos de uso | Peliculas y series">
+<meta name="description" content="Nuestros terminos de uso se determinan por el uso de nuestra plataforma digital de peliculas y series.">
+<meta name="robots" content="index, follow">
+<meta name="keywords" content="peliculas, series, entretenimiento, plataformas digitales,estrenos peliculas, lanzamiento peliculas"/>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Terminos de uso | Peliculas y series">
+  <meta property="og:description" content="Nuestros terminos de uso se determinan por el uso de nuestra plataforma digital de peliculas y series.">
+  <meta property="og:image" content="https://pelicries.gieovannyfrias.com/Imagenes/Logo.webp">
+  <meta property="og:url" content="https://pelicries.gieovannyfrias.com/Terminos_uso">
+  <meta property="og:type" content="article">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Terminos de uso| Peliculas y series">
+  <meta name="twitter:description" content="Nuestros terminos de uso se determinan por el uso de nuestra plataforma digital de peliculas y series.">
+<meta name="twitter:image" content="https://pelicries.gieovannyfrias.com/Imagenes/Logo.webp">
+</head>
+<body>
+    <main class="contenedor-terminos">
+        <h2>Términos y Condiciones de Uso</h2>
+        <p class="fecha-actualizacion">Última actualización: 14 de julio de 2026</p>
+
+        <section class="termino-seccion">
+            <h3>1. Aceptación de los Términos</h3>
+            <p>Al acceder y utilizar nuestro sitio web de películas y series, usted acepta cumplir y estar legalmente sujeto a estos Términos de Uso. Si no está de acuerdo con alguna parte de estos términos, no debe utilizar nuestro servicio.</p>
+        </section>
+
+        <section class="termino-seccion">
+            <h3>2. Uso del Contenido</h3>
+            <p>Todo el contenido multimedia (películas, series, carátulas y sinopsis) proporcionado en este sitio es para uso estrictamente personal y no comercial. Queda prohibida la copia, distribución, o transmisión pública del material.</p>
+        </section>
+
+        <section class="termino-seccion">
+            <h3>3. Cuentas de Usuario</h3>
+            <p>Para acceder a ciertas funciones, es posible que deba crear una cuenta. Usted es responsable de mantener la confidencialidad de su contraseña y de todas las actividades que ocurran bajo su cuenta.</p>
+        </section>
+
+        <section class="termino-seccion">
+            <h3>4. Enlaces a Terceros</h3>
+            <p>Nuestro sitio puede contener enlaces a plataformas de reproducción o servidores de terceros. No tenemos control sobre el contenido o las prácticas de privacidad de dichos sitios.</p>
+        </section>
+
+        <button id="boton-aceptar" class="btn-principal">Aceptar y Continuar</button>
+    </main>
+
+<style>
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #141414; /* Tono oscuro tipo Netflix */
+    color: #e5e5e5;
+    line-height: 1.6;
+  zoom:75%;
+}
+
+
+
+.contenedor-terminos {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #242424;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.contenedor-terminos h2 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.fecha-actualizacion {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.termino-seccion {
+    margin-bottom: 25px;
+}
+
+.termino-seccion h3 {
+    margin-bottom: 10px;
+    color: #fff;
+    border-left: 4px solid #e50914;
+    padding-left: 10px;
+}
+
+.btn-principal {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 30px auto 0;
+    padding: 15px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-principal:hover {
+    background-color: #f40612;
+}
+
+
+  </style>
+  <script src="src/components/Header-Footer/Header-Footer-main.js" defer></script>
+    <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const botonAceptar = document.getElementById('boton-aceptar');
+
+    botonAceptar.addEventListener('click', () => {
+        // Guardamos en el almacenamiento local que el usuario aceptó los términos
+        localStorage.setItem('terminosAceptados', 'true');
+        
+        // Opcional: Redirigir a la página principal
+        alert('Términos aceptados por pelicries. Redirigiendo al catálogo...');
+        window.location.href = 'index.html'; 
+    });
+
+    // Opcional: Si ya aceptó antes, no volver a mostrar esta pantalla obligatoria (redirige)
+    if(localStorage.getItem('terminosAceptados') === 'true') {
+         console.log("El usuario ya aceptó los términos anteriormente.");
+    }
+});
+
+  </script>
+</body>
+</html>

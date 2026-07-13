@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+   <link rel="icon" href="https://pelicries.gieovannyfrias.com/Imagenes/Logo.webp" type="image/x-icon">
+<!--  google-->
+    <title>Politicas de cookies | Peliculas y series</title>
+  <!--  canonical web-->
+  <link rel="canonical" href="https://pelicries.gieovannyfrias.com"/>
+
+<!-- Título que verá Google -->
+<meta name="title" content="Politicas de cookies | Peliculas y series">
+<meta name="description" content="Nuestras politicas de cookies se determinan por el uso de nuestra plataforma digital de peliculas y series.">
+<meta name="robots" content="index, follow">
+<meta name="keywords" content="peliculas, series, entretenimiento, plataformas digitales,estrenos peliculas, lanzamiento peliculas"/>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Politicas de cookies | Peliculas y series">
+  <meta property="og:description" content="Nuestras politicas de cookies se determinan por el uso de nuestra plataforma digital de peliculas y series.">
+  <meta property="og:image" content="https://pelicries.gieovannyfrias.com/Imagenes/Logo.webp">
+  <meta property="og:url" content="https://pelicries.gieovannyfrias.com/Politicas_cookies">
+  <meta property="og:type" content="article">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Politicas de cookies | Peliculas y series">
+  <meta name="twitter:description" content="Nuestras politicas de cookies se determinan por el uso de nuestra plataforma digital de peliculas y series.">
+<meta name="twitter:image" content="https://pelicries.gieovannyfrias.com/Imagenes/Logo.webp">
+</head>
+<body>
+
+    <!-- BANNER DE COOKIES (Insertar al final del body en tu index.html) -->
+    <div id="banner-cookies" class="banner-cookies oculto">
+        <div class="contenido-banner">
+            <p>Utilizamos cookies propias y de terceros para mejorar tu experiencia de streaming, analizar el tráfico y mostrarte recomendaciones personalizadas de series y películas. Al hacer clic en "Aceptar todas", consientes su uso. Puedes leer más en nuestra <a href="#seccion-legal">Política de Cookies</a>.</p>
+            <div class="botones-banner">
+                <button id="btn-rechazar-cookies" class="btn-secundario">Rechazar</button>
+                <button id="btn-aceptar-cookies" class="btn-principal">Aceptar todas</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- PÁGINA LEGAL DETALLADA -->
+
+    <main id="seccion-legal" class="contenedor-legal">
+        <h2>Política de Cookies</h2>
+        <p class="fecha-actualizacion">Última actualización: 14 de julio de 2026</p>
+
+        <section class="seccion-texto">
+            <h3>¿Qué son las cookies?</h3>
+            <p>Las cookies son pequeños archivos de texto que los sitios web almacenan en tu navegador o dispositivo móvil. Permiten que la plataforma recuerde tus acciones y preferencias (como inicio de sesión, idioma, tamaño de letra y preferencias de reproducción de video) durante un período de tiempo.</p>
+        </section>
+
+        <section class="seccion-texto">
+            <h3>¿Cómo usamos las cookies en Pelicries?</h3>
+            <p>En nuestra plataforma de películas y series utilizamos los siguientes tipos de cookies:</p>
+            <ul class="lista-cookies">
+                <li><strong>Cookies Técnicas Obligatorias:</strong> Esenciales para mantener tu sesión iniciada, recordar el minuto exacto donde pausaste una película y garantizar la seguridad del sitio.</li>
+                <li><strong>Cookies de Rendimiento:</strong> Analizan de forma anónima cómo navegan los usuarios para detectar errores de carga en los servidores de video y mejorar la velocidad de reproducción.</li>
+                <li><strong>Cookies de Personalización:</strong> Permiten que el sistema te sugiera nuevos episodios basados en tu historial de visualización reciente.</li>
+            </ul>
+        </section>
+
+        <section class="seccion-texto">
+            <h3>¿Cómo administrar o desactivar las cookies?</h3>
+            <p>Puedes restringir, bloquear o borrar las cookies de este o cualquier otro sitio web utilizando la configuración de tu propio navegador:</p>
+            <ul class="lista-enlaces-navegadores">
+                <li><a href="https://support.google.com/chrome/answer/95647?hl=es-419&co=GENIE.Platform%3DDesktop" target="_blank" rel="noopener">Configurar Cookies en Google Chrome</a></li>
+                <li><a href="https://support.mozilla.org/es/kb/Borrar%20cookies" target="_blank" rel="noopener">Configurar Cookies en Mozilla Firefox</a></li>
+                <li><a href="https://www.apple.com/legal/privacy/es/cookies/" target="_blank" rel="noopener">Configurar Cookies en Apple Safari</a></li>
+            </ul>
+        </section>
+    </main>
+
+<style>
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #141414;
+    color: #e5e5e5;
+    line-height: 1.6;
+  zoom:75%;
+}
+
+/* BANNER EMERGENTE DE COOKIES */
+.banner-cookies {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1f1f1f;
+    border-top: 3px solid #e50914;
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.5);
+    z-index: 9999;
+    padding: 20px;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.banner-cookies.oculto {
+    transform: translateY(100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.contenido-banner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contenido-banner p {
+    font-size: 0.95em;
+    color: #ccc;
+}
+
+.contenido-banner a {
+    color: #e50914;
+    text-decoration: underline;
+}
+
+.botones-banner {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+/* BOTONES */
+.btn-principal, .btn-secundario {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background 0.2s;
+}
+
+.btn-principal {
+    background-color: #e50914;
+    color: #fff;
+}
+
+.btn-principal:hover {
+    background-color: #f40612;
+}
+
+.btn-secundario {
+    background-color: #444;
+    color: #fff;
+}
+
+.btn-secundario:hover {
+    background-color: #555;
+}
+
+/* PÁGINA LEGAL DETALLADA */
+.contenedor-legal {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #242424;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.contenedor-legal h2 {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.fecha-actualizacion {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.seccion-texto {
+    margin-bottom: 25px;
+}
+
+.seccion-texto h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.lista-cookies, .lista-enlaces-navegadores {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.lista-cookies li {
+    margin-bottom: 10px;
+    font-size: 0.95em;
+}
+
+.lista-enlaces-navegadores a {
+    color: #e50914;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.lista-enlaces-navegadores a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+    .contenido-banner {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .contenido-banner p {
+        flex: 1;
+    }
+}
+
+  </style>
+    <script src="src/components/Header-Footer/Header-Footer-main.js" defer></script>
+
+    <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const banner = document.getElementById('banner-cookies');
+    const btnAceptar = document.getElementById('btn-aceptar-cookies');
+    const btnRechazar = document.getElementById('btn-rechazar-cookies');
+
+    // Función para mostrar el aviso con retraso tras cargar la página
+    setTimeout(() => {
+        // Comprobamos si el usuario ya ha tomado una decisión previamente
+        if (!localStorage.getItem('cookiesConsentimiento')) {
+            banner.classList.remove('oculto');
+        }
+    }, 1000);
+
+    // Acción al aceptar todas las cookies
+    btnAceptar.addEventListener('click', () => {
+        localStorage.setItem('cookiesConsentimiento', 'aceptadas');
+        ocultarBanner();
+    });
+
+    // Acción al rechazar las cookies no esenciales
+    btnRechazar.addEventListener('click', () => {
+        localStorage.setItem('cookiesConsentimiento', 'rechazadas');
+        ocultarBanner();
+    });
+
+    function ocultarBanner() {
+        banner.classList.add('oculto');
+    }
+});
+
+  </script>
+</body>
+</html>

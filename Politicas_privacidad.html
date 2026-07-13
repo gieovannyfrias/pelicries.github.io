@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+   <link rel="icon" href="https://pelicries.gieovannyfrias.com/Imagenes/Logo.webp" type="image/x-icon">
+<!--  google-->
+    <title>Politicas de privacidad | Peliculas y series</title>
+  <!--  canonical web-->
+  <link rel="canonical" href="https://pelicries.gieovannyfrias.com"/>
+
+<!-- Título que verá Google -->
+<meta name="title" content="Estrenos recientes | Peliculas y series">
+<meta name="description" content="Nuestras politicas de privacidad se determinan por el uso de nuestra plataforma digital de peliculas y series.">
+<meta name="robots" content="index, follow">
+<meta name="keywords" content="peliculas, series, entretenimiento, plataformas digitales,estrenos peliculas, lanzamiento peliculas"/>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Estrenos recientes | Peliculas y series">
+  <meta property="og:description" content="Nuestras politicas de privacidad se determinan por el uso de nuestra plataforma digital de peliculas y series.">
+  <meta property="og:image" content="https://pelicries.gieovannyfrias.com/Imagenes/Logo.webp">
+  <meta property="og:url" content="https://pelicries.gieovannyfrias.com/Politicas_privacidad">
+  <meta property="og:type" content="article">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Estrenos recientes | Peliculas y series">
+  <meta name="twitter:description" content="Nuestras politicas de privacidad se determinan por el uso de nuestra plataforma digital de peliculas y series.">
+<meta name="twitter:image" content="https://pelicries.gieovannyfrias.com/Imagenes/Logo.webp">
+</head>
+<body>
+
+    <main class="contenedor-legal">
+        <h2>Política de Privacidad</h2>
+        <p class="fecha-actualizacion">Última actualización: 14 de julio de 2026</p>
+
+        <section class="seccion-acordeon">
+            <button class="acordeon-titulo">1. Datos que Recopilamos</button>
+            <div class="acordeon-contenido">
+                <p>Recopilamos información personal básica como su nombre, correo electrónico y preferencias de visualización cuando se registra. También recopilamos datos técnicos automáticos (dirección IP, tipo de navegador) mediante cookies para mejorar el rendimiento del sitio.</p>
+            </div>
+        </section>
+
+        <section class="seccion-acordeon">
+            <button class="acordeon-titulo">2. Uso de la Información</button>
+            <div class="acordeon-contenido">
+                <p>Utilizamos sus datos exclusivamente para personalizar sus recomendaciones de películas y series, gestionar su cuenta de usuario, enviar notificaciones de nuevos estrenos (si lo autoriza) y mantener la seguridad del sitio web.</p>
+            </div>
+        </section>
+
+        <section class="seccion-acordeon">
+            <button class="acordeon-titulo">3. Cookies y Tecnologías de Rastreo</button>
+            <div class="acordeon-contenido">
+                <p>Este sitio utiliza cookies propias y de terceros para analizar el tráfico y recordar sus sesiones iniciadas. Usted puede desactivar las cookies desde la configuración de su navegador, aunque algunas funciones del sitio podrían dejar de operar correctamente.</p>
+            </div>
+        </section>
+
+        <section class="seccion-acordeon">
+            <button class="acordeon-titulo">4. Compartición de Datos</button>
+            <div class="acordeon-contenido">
+                <p>No vendemos, comercializamos ni transferimos su información personal a terceros. Esto no incluye a proveedores de confianza que nos ayudan a operar el sitio web o procesar pagos, siempre que se comprometan a mantener la confidencialidad.</p>
+            </div>
+        </section>
+
+        <div class="formulario-privacidad">
+            <label class="check-container">
+                <input type="checkbox" id="check-privacidad">
+                Acepto la política de privacidad y el uso de mis datos.
+            </label>
+            <button id="btn-continuar" class="btn-desactivado" disabled>Continuar al Catálogo</button>
+        </div>
+    </main>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #141414;
+    color: #e5e5e5;
+    line-height: 1.6;
+  zoom:75%;
+}
+
+.contenedor-legal {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #242424;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.contenedor-legal h2 {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.fecha-actualizacion {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+/* Estilos del Acordeón */
+.seccion-acordeon {
+    margin-bottom: 15px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.acordeon-titulo {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    padding: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: flex;
+    justify-content: space-between;
+}
+
+.acordeon-titulo:hover, .acordeon-titulo.activo {
+    background-color: #444;
+}
+
+.acordeon-titulo::after {
+    content: '▼';
+    font-size: 0.8em;
+    color: #e50914;
+}
+
+.acordeon-titulo.activo::after {
+    content: '▲';
+}
+
+.acordeon-contenido {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #1a1a1a;
+    transition: max-height 0.3s ease-out;
+}
+
+.acordeon-contenido p {
+    padding: 15px;
+    font-size: 0.95em;
+    color: #ccc;
+}
+
+/* Formulario de Aceptación */
+.formulario-privacidad {
+    margin-top: 40px;
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+
+.check-container {
+    display: block;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 0.95em;
+}
+
+.check-container input {
+    margin-right: 10px;
+    accent-color: #e50914;
+}
+
+/* Botones */
+#btn-continuar {
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-activo {
+    background-color: #e50914;
+}
+
+.btn-activo:hover {
+    background-color: #f40612;
+}
+
+.btn-desactivado {
+    background-color: #555;
+    cursor: not-allowed !important;
+    opacity: 0.6;
+}
+
+
+
+  </style>
+    <script src="src/components/Header-Footer/Header-Footer-main.js" defer></script>
+    <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // 1. Lógica del Acordeón Colapsable
+    const titulos = document.querySelectorAll('.acordeon-titulo');
+
+    titulos.forEach(titulo => {
+        titulo.addEventListener('click', function() {
+            this.classList.toggle('activo');
+            const contenido = this.nextElementSibling;
+
+            if (contenido.style.maxHeight) {
+                contenido.style.maxHeight = null;
+            } else {
+                contenido.style.maxHeight = contenido.scrollHeight + "px";
+            }
+        });
+    });
+
+    // 2. Lógica de Activación del Botón
+    const checkbox = document.getElementById('check-privacidad');
+    const boton = document.getElementById('btn-continuar');
+
+    checkbox.addEventListener('change', () => {
+        if (checkbox.checked) {
+            boton.disabled = false;
+            boton.classList.remove('btn-desactivado');
+            boton.classList.add('btn-activo');
+        } else {
+            boton.disabled = true;
+            boton.classList.remove('btn-activo');
+            boton.classList.add('btn-desactivado');
+        }
+    });
+
+    // Acción del botón al hacer click
+    boton.addEventListener('click', () => {
+        localStorage.setItem('privacidadAceptada', 'true');
+        alert('Política de privacidad aceptada correctamente en pelicries.');
+        window.location.href = 'index.html';
+    });
+});
+
+  </script>
+</body>
+</html>
