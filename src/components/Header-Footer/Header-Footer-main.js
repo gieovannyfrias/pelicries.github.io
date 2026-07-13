@@ -12,13 +12,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     
     /* SOLUCIÓN 1: Forzar al contenedor padre a manejar alturas de forma estricta */
-    body {
-      display: flex !important;
-      flex-direction: column !important;
-      min-height: 100vh !important;
-      background-color: #0b0b0d; 
-      color: #f5f5f7;
-    }
+//    body {
+//      display: flex !important;
+//      flex-direction: column !important;
+//      min-height: 100vh !important;
+//      background-color: #0b0b0d; 
+//      color: #f5f5f7;
+//    }
 
     /* SOLUCIÓN 2: Forzar al área de contenido a absorber el espacio y no colapsar */
     main, .main-content {
@@ -257,8 +257,9 @@ document.addEventListener("DOMContentLoaded", () => {
     </button>
     <ul class="nav-menu">
       <li class="nav-item"><a href="/index">Inicio</a></li>
+   <li class="nav-item"><a href="/Estrenos">Estrenos</a></li>
       <li class="nav-item"><a href="/Peliculas">Películas</a></li>
-      <li class="nav-item"><a href="#/Series">Series</a></li>
+      <li class="nav-item"><a href="/Series">Series</a></li>
     </ul>
   `;
   document.body.insertBefore(headerContainer, document.body.firstChild);
