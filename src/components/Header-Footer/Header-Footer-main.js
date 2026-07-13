@@ -257,9 +257,11 @@ document.addEventListener("DOMContentLoaded", () => {
     </button>
     <ul class="nav-menu">
       <li class="nav-item"><a href="/index">Inicio</a></li>
+      <li class="nav-item"><a href="/Acerca_de">Acerca de</a></li>
    <li class="nav-item"><a href="/Estrenos">Estrenos</a></li>
       <li class="nav-item"><a href="/Peliculas">Películas</a></li>
       <li class="nav-item"><a href="/Series">Series</a></li>
+ <li class="nav-item"><a href="/Contacto">Contacto</a></li>
     </ul>
   `;
   document.body.insertBefore(headerContainer, document.body.firstChild);
