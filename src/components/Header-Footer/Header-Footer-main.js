@@ -21,13 +21,13 @@ document.addEventListener("DOMContentLoaded", () => {
 //    }
 
     /* SOLUCIÓN 2: Forzar al área de contenido a absorber el espacio y no colapsar */
-    main, .main-content {
-      display: block !important;
-      flex: 1 0 auto !important; 
-      width: 100%;
-      min-height: 65vh !important; 
-      box-sizing: border-box;
-    }
+//    main, .main-content {
+//      display: block !important;
+//      flex: 1 0 auto !important; 
+//      width: 100%;
+//      min-height: 65vh !important; 
+//      box-sizing: border-box;
+//    }
 
     /* --- ESTILOS DEL HEADER PREMIUM --- */
     .custom-header {
